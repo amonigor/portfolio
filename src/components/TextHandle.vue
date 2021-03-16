@@ -77,7 +77,7 @@ h1 {
     h1 {
         font-size: 60px;
         width: 400px;
-        margin-left: 25px;
+        margin-left: 12px;
 
         span {
             font-size: 30px;
