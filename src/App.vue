@@ -17,13 +17,16 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto&display=swap');
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
+}
+
+body {
     display: flex;
 }
 
@@ -34,7 +37,6 @@ body {
     color: #ffffff;
     background-color: #000000;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
