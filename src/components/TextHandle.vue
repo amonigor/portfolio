@@ -46,6 +46,7 @@ export default {
 h1 {
     text-align: left;
     font-size: 120px;
+    width: 700px;
 
     span {
         margin-left: -10px;
@@ -59,5 +60,39 @@ h1 {
 }
 .fade-enter, .fade-leave-to {
     opacity: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 80px;
+        width: 500px;
+
+        span {
+            font-size: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 60px;
+        width: 400px;
+        margin-left: 25px;
+
+        span {
+            font-size: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 50px;
+        width: 300px;
+
+        span {
+            font-size: 25px;
+        }
+    }
 }
 </style>
