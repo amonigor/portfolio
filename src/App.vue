@@ -7,12 +7,6 @@
 <script>
 export default {
     name: "App",
-    metaInfo: {
-        title: 'em breve',
-        htmlAttrs: {
-            lang: 'pt-BR',
-        },
-    },
 };
 </script>
 

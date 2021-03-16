@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+        <!-- OpenGraph -->
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:url" content="https://amonigor.dev/">
+        <meta property="og:title" content="Em breve...">
+        <meta property="og:site_name" content="Igor Amon">
+        <meta property="og:description" content="Em breve o site estará no ar...">
+        <meta property="og:image" content="https://amonigor.dev/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1000">
+        <meta property="og:image:height" content="1000">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Cards -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="https://amonigor.dev/">
+        <meta name="twitter:title" content="Em breve...">
+        <meta name="twitter:description" content="Em breve o site estará no ar...">
+        <meta name="twitter:image" content="https://amonigor.dev/logo.png">
+
+        <title><%= htmlWebpackPlugin.options.title %></title>
+    </head>
+
+    <body>
+        <noscript>Please enable javascript for the site to work correctly</noscript>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+    </body>
 </html>
