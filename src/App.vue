@@ -39,10 +39,5 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    h1 {
-        text-align: center;
-        font-size: 120px;
-    }
 }
 </style>
