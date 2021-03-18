@@ -10,7 +10,7 @@
         <div class="contact">
             <a href="https://github.com/amonigor" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/igor-amon/" target="_blank">LinkedIn</a>
-            <p>contact@amonigor.dev</p>
+            <a href="mailto:contact@amonigor.dev">contact@amonigor.dev</a>
         </div>
     </div>
 </template>
@@ -21,6 +21,7 @@ export default {
     data() {
         return {
             extension: '.js',
+            listext: ['.js', '.vue', '.php', '.html', '.css'],
         }
     },
     created() {
@@ -28,23 +29,9 @@ export default {
     },
     methods: {
         changeExtension() {
-            switch (this.extension) {
-                case '.js':
-                    this.extension = '.vue';
-                    break;
-                case '.vue':
-                    this.extension = '.php';
-                    break;
-                case '.php':
-                    this.extension = '.html';
-                    break;
-                case '.html':
-                    this.extension = '.css';
-                    break;
-                default:
-                    this.extension = '.js';
-                    break;
-            }
+            let index = this.listext.indexOf(this.extension);
+            index = (index + 1) >= this.listext.length ? 0 : (index + 1);
+            this.extension = this.listext[index];
         }
     },
 }
