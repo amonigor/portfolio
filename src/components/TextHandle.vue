@@ -107,6 +107,15 @@ h1 {
     opacity: 0;
 }
 
+.slide-fade-enter-active {
+  transition: all 1s ease;
+}
+.slide-fade-enter
+.slide-fade-leave-to {
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
 @media only screen and (max-width: 800px) {
     h1 {
         font-size: 80px;
