@@ -1,28 +1,32 @@
 <template>
     <div class="content">
-        <h1>
-            igor amon
-            <transition name="fade" mode="out-in">
-                <span :key="extension">{{ extension }}</span>
-            </transition>
-        </h1>
+        <transition name="slide-fade" appear>
+            <h1>
+                igor amon
+                <transition name="fade" mode="out-in">
+                    <span :key="extension">{{ extension }}</span>
+                </transition>
+            </h1>
+        </transition>
 
-        <div class="contact">
-            <a href="https://github.com/amonigor" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/igor-amon/" target="_blank">LinkedIn</a>
-            <a href="mailto:contact@amonigor.dev">contact@amonigor.dev</a>
-        </div>
+        <transition name="slide-fade" appear>
+            <div class="contact">
+                <a href="https://github.com/amonigor" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/igor-amon/" target="_blank">LinkedIn</a>
+                <a href="mailto:contact@amonigor.dev">contact@amonigor.dev</a>
+            </div>
+        </transition>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'TextHandle',
+    name: "TextHandle",
     data() {
         return {
-            extension: '.js',
-            listext: ['.js', '.vue', '.php', '.html', '.css'],
-        }
+            extension: ".js",
+            listext: [".js", ".vue", ".php", ".html", ".css"],
+        };
     },
     created() {
         setInterval(this.changeExtension, 2000);
@@ -30,11 +34,11 @@ export default {
     methods: {
         changeExtension() {
             let index = this.listext.indexOf(this.extension);
-            index = (index + 1) >= this.listext.length ? 0 : (index + 1);
+            index = index + 1 >= this.listext.length ? 0 : index + 1;
             this.extension = this.listext[index];
-        }
+        },
     },
-}
+};
 </script>
 
 <style lang="scss">
@@ -61,7 +65,7 @@ h1 {
 }
 
 .contact {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,10 +86,24 @@ h1 {
     }
 }
 
-.fade-enter-active, .fade-leave-active {
-    transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.slide-fade-enter-active {
+    transition: all 1s ease;
+}
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: translateY(-100px);
     opacity: 0;
 }
 
