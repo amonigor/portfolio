@@ -24,8 +24,8 @@ export default {
     name: "TextHandle",
     data() {
         return {
-            extension: ".js",
-            listext: [".js", ".vue", ".php", ".html", ".css"],
+            extension: ".dev",
+            listext: [".dev", ".js", ".vue", ".php", ".html", ".css"],
         };
     },
     created() {
