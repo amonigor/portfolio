@@ -9,11 +9,20 @@
             </h1>
         </transition>
 
-        <transition name="slide-fade" appear>
+        <transition name="slide-invert-fade" appear>
             <div class="contact">
-                <a href="https://github.com/amonigor" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/igor-amon/" target="_blank">LinkedIn</a>
-                <a href="mailto:contact@amonigor.dev">contact@amonigor.dev</a>
+                <a href="https://github.com/amonigor" target="_blank">
+                    <font-awesome-icon :icon="['fab', 'github-square']" />
+                    <p>GitHub</p>
+                </a>
+                <a href="https://www.linkedin.com/in/igor-amon/" target="_blank">
+                    <font-awesome-icon :icon="['fab', 'linkedin']" />
+                    <p>LinkedIn</p>
+                </a>
+                <a href="mailto:contact@amonigor.dev">
+                    <font-awesome-icon :icon="['fas', 'envelope-square']" />
+                    <p>contact@amonigor.dev</p>
+                </a>
             </div>
         </transition>
     </div>
@@ -66,23 +75,32 @@ h1 {
 
 .contact {
     font-family: "Roboto", sans-serif;
+    font-size: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 
     a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
         text-decoration: none;
         color: #ffffff;
         margin: 10px 10px;
+        transition-duration: .2s;
 
         &:hover {
-            text-decoration: underline;
+            color: #a1a1a1;
         }
-    }
 
-    p {
-        margin: 10px 10px;
+        p {
+            margin: 0 0 0 5px;
+            font-size: 15px;
+        }
     }
 }
 
@@ -95,25 +113,21 @@ h1 {
     opacity: 0;
 }
 
-.slide-fade-enter-active {
+.slide-fade-enter-active, .slide-invert-fade-enter-active {
     transition: all 1s ease;
 }
-.slide-fade-leave-active {
+.slide-fade-leave-active, .slide-invert-fade-leave-active {
     transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 }
 .slide-fade-enter,
 .slide-fade-leave-to {
-    transform: translateY(-100px);
+    transform: translateX(-100px);
     opacity: 0;
 }
-
-.slide-fade-enter-active {
-  transition: all 1s ease;
-}
-.slide-fade-enter
-.slide-fade-leave-to {
-  transform: translateY(-100px);
-  opacity: 0;
+.slide-invert-fade-enter,
+.slide-invert-fade-leave-to {
+    transform: translateX(100px);
+    opacity: 0;
 }
 
 @media only screen and (max-width: 800px) {
