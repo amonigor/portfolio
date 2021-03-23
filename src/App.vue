@@ -18,6 +18,7 @@ html, body {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 body {
@@ -35,5 +36,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 </style>

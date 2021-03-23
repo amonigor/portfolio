@@ -52,6 +52,7 @@ export default {
 
 <style lang="scss">
 .content {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
