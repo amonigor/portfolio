@@ -15,7 +15,7 @@ export default {
       { hid: 'author', name: 'author', content: 'Igor Amon' },
       { hid: 'description', name: 'description', content: 'Igor Amon - Desenvolvedor Full Stack' },
       { name: 'keys', content: 'fullstack developer, desenvolvedor fullstack, backend developer, desenvolvedor backend, frontend developer, desenvolvedor frontend, php, laravel, vuejs, vue, js, web, site, website' },
-      
+
       // OpenGraph
       { name: 'og:locale', content: 'pt_BR' },
       { name: 'og:url', content: 'https://amonigor.dev/' },
@@ -42,6 +42,9 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/main.css',
+    '@/assets/css/fonts.css',
+    '@/assets/scss/colors.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -57,9 +60,22 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/style-resources',
   ],
+
+  styleResources: {
+    scss: ['./assets/scss/*.scss'],
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    loaders: {
+      sass: {
+        implementation: require('sass'),
+      },
+      scss: {
+        implementation: require('sass'),
+      }
+    }
   }
 }
