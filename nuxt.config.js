@@ -43,7 +43,6 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/main.css',
-    '@/assets/css/fonts.css',
     '@/assets/scss/colors.scss',
   ],
 
@@ -56,6 +55,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -85,5 +85,18 @@ export default {
         return ['script', 'style', 'font'].includes(type)
       }
     }
+  },
+
+  googleFonts: {
+    families: {
+      Poppins: true,
+      'Patua+One': true
+    },
+    display: 'swap',
+    subsets: 'latin',
+    prefetch: true,
+    preload: true,
+    preconnect: true,
+    useStyleSheet: true,
   }
 }
