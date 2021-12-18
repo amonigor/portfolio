@@ -63,15 +63,17 @@ export default {
 
   .logo {
     p {
-      font-size: 2rem;
-      line-height: 2rem;
-      font-family: "Patua One", cursive;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      // font-family: "Patua One", cursive;
+      font-weight: 700;
       color: $white;
 
       span {
         font-size: 1rem;
         line-height: 1rem;
-        font-family: "Patua One", cursive;
+        // font-family: "Patua One", cursive;
+        font-weight: 700;
         color: $blue-green-1;
       }
     }
