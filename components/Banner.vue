@@ -1,0 +1,122 @@
+<template>
+  <div class="container">
+    <div class="content">
+      <h1>Igor Amon</h1>
+      <p>Desenvolvedor Full Stack</p>
+
+      <div class="links">
+        <a href="mailto:amon.igorlr@gmail.com" target="_blank" title="e-mail">
+          <img src="~/assets/img/icons/mail/bluegreen1.svg" />
+        </a>
+        <a href="https://www.linkedin.com/in/igor-amon/" target="_blank" title="linkedin">
+          <img src="~/assets/img/icons/linkedin/bluegreen1.svg" />
+        </a>
+        <a href="https://github.com/amonigor" target="_blank" title="github">
+          <img src="~/assets/img/icons/github/bluegreen1.svg" />
+        </a>
+      </div>
+
+      <a href="#" class="more"> saiba mais </a>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Banner",
+};
+</script>
+
+<style lang="scss" scoped>
+.container {
+  padding: 190px 160px 120px 160px;
+
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 5rem;
+      color: $white;
+      margin: 0;
+      text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+      line-height: 120%;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $blue-green-1;
+      margin: 10px 0;
+    }
+
+    .links {
+      margin: 15px 0;
+      display: flex;
+
+      a {
+        width: 1.5rem;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+          height: 1.5rem;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &::after {
+          content: "";
+          background-color: $blue-green-2;
+          width: 0;
+          height: 2px;
+          transition-duration: 0.3s;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .more {
+      box-sizing: border-box;
+      display: inline-block;
+      font-size: 1rem;
+      text-decoration: none;
+      color: $white;
+      border: 2px solid $white;
+      border-radius: 5px;
+      padding: 8px 12px;
+      transition-duration: 0.2s;
+
+      &:hover, &:focus {
+        background-color: $white;
+        color: $dark-grey;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 190px 80px 120px 80px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .container {
+    padding: 190px 20px 120px 20px;
+  }
+}
+</style>

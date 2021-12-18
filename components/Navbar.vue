@@ -24,8 +24,8 @@
         </a>
 
         <div class="others">
-          <a href="#" class="social linkedin" title="Linkedin"></a>
-          <a href="#" class="social github" title="Github"></a>
+          <a href="https://www.linkedin.com/in/igor-amon/" target="_blank" class="social linkedin" title="Linkedin"></a>
+          <a href="https://github.com/amonigor" target="_blank" class="social github" title="Github"></a>
 
           <a
             href="#"
@@ -64,7 +64,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
   background-color: rgba(21, 21, 21, 0.8);
   backdrop-filter: blur(5px);
@@ -283,7 +283,7 @@ export default {
 
         .others {
           margin-top: 20px;
-          
+
           .language {
             margin-left: 10px;
           }
