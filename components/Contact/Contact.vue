@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  padding-bottom: 110px;
+  padding-bottom: 60px;
 
   .content {
     .contact-container {

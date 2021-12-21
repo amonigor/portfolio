@@ -6,6 +6,7 @@
       <About />
       <Portfolio />
       <Contact />
+      <Footer />
     </main>
   </div>
 </template>
