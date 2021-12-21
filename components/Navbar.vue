@@ -2,7 +2,7 @@
   <div class="container">
     <div class="content">
       <div class="logo">
-        <p>amonigor<span>.dev</span></p>
+        <img src="~/assets/img/logo.svg" alt="amonigor.dev">
       </div>
 
       <div class="menu-button" @click.prevent="toggleMenu()">
@@ -67,7 +67,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   background-color: rgba(21, 21, 21, 0.8);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   width: 100%;
   padding: 20px 160px;
   position: fixed;
@@ -80,19 +80,8 @@ export default {
     margin: 0 auto;
 
     .logo {
-      p {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        font-weight: 700;
-        color: $white;
-
-        span {
-          font-size: 1rem;
-          line-height: 1rem;
-          font-weight: 700;
-          color: $blue-green-1;
-        }
-      }
+      display: flex;
+      align-items: center;
     }
 
     .menu-button {
