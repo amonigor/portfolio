@@ -89,4 +89,17 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 386px) {
+  .container {
+    .content {
+      .left {
+        p {
+          text-align: center;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
 </style>
