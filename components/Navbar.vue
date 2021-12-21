@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <nav class="container">
     <div class="content">
       <div class="logo">
         <img src="~/assets/img/logo.svg" alt="amonigor.dev" />
@@ -92,7 +92,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>

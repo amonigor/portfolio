@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <header class="container">
     <div class="content">
       <h1>Igor Amon</h1>
       <p>Desenvolvedor Full Stack</p>
@@ -18,7 +18,7 @@
 
       <a href="#" class="more"> saiba mais </a>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
