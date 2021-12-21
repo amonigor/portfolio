@@ -4,6 +4,7 @@
     <main>
       <Banner />
       <About />
+      <Portfolio />
     </main>
   </div>
 </template>
