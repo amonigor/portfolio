@@ -5,6 +5,7 @@
       <Banner />
       <About />
       <Portfolio />
+      <Contact />
     </main>
   </div>
 </template>

@@ -36,7 +36,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 
   .portfolio-container {
     display: flex;

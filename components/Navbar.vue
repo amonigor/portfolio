@@ -40,7 +40,7 @@
         <a href="#" class="section" @click.prevent="scrollPage('portfolio')">
           <p>portfólio</p>
         </a>
-        <a href="#" class="section">
+        <a href="#" class="section" @click.prevent="scrollPage('contact')">
           <p>contato</p>
         </a>
 
