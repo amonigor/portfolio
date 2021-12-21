@@ -307,6 +307,7 @@ export default {
           background-position: center center;
           transition-duration: 0.2s;
           margin-top: 0;
+          margin-right: 0;
           position: relative;
 
           img {
