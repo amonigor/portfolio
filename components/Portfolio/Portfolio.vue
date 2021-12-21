@@ -3,10 +3,7 @@
     <div class="content">
       <h1 class="section-title">portfólio</h1>
 
-      <div
-        class="portfolio-container"
-        :class="[items.length > 2 ? 'spaced' : '']"
-      >
+      <div class="portfolio-container">
         <PortfolioItem
           v-for="(item, idx) in items"
           v-bind:key="idx"
@@ -44,10 +41,6 @@ export default {
     width: 100%;
     margin-top: 30px;
     justify-content: flex-start;
-
-    &.spaced {
-      justify-content: space-between !important;
-    }
   }
 }
 </style>

@@ -39,12 +39,12 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio-item {
-  width: 320px;
+  width: calc(33% - 35px);
   min-height: 365px;
   background-color: #464646;
   border-radius: 2rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  margin: 0 20px 20px 20px;
+  margin: 0 17.5px 30px 17.5px;
   display: flex;
   flex-direction: column;
 
@@ -84,22 +84,25 @@ export default {
   }
 }
 
-@media only screen and (max-width: 1330px) {
-  .portfolio-item {
-    width: 420px;
-  }
-}
-
 @media only screen and (max-width: 1050px) {
   .portfolio-item {
-    width: 320px;
+    width: calc(50% - 35px);
+
+    &:nth-child(2n) {
+      margin-left: 17.5px;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 @media only screen and (max-width: 720px) {
   .portfolio-item {
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0 !important;
   }
 }
 </style>
