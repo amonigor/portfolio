@@ -174,22 +174,22 @@ export default {
           }
 
           &.open {
-            visibility: visible;
+            display: flex;
           }
 
           &.close {
-            visibility: hidden;
+            display: none;
           }
         }
 
         &.close {
           img {
             &.open {
-              visibility: hidden;
+              display: none;
             }
 
             &.close {
-              visibility: visible;
+              display: flex;
             }
           }
         }
