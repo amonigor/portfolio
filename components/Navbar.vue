@@ -1,5 +1,5 @@
 <template>
-  <nav class="container">
+  <nav class="container" id="navbar">
     <div class="content">
       <div class="logo">
         <img src="~/assets/img/logo.svg" alt="amonigor.dev" />
@@ -31,10 +31,10 @@
       </div>
 
       <div class="links" :class="[menu ? 'open' : '']">
-        <a href="#" class="section active">
+        <a href="#" class="section" @click.prevent="scrollPage('start')">
           <p>início</p>
         </a>
-        <a href="#" class="section">
+        <a href="#" class="section" @click.prevent="scrollPage('about-me')">
           <p>sobre mim</p>
         </a>
         <a href="#" class="section">
@@ -115,6 +115,16 @@ export default {
     toggleMenu: function () {
       this.menu = !this.menu;
     },
+    scrollPage: function (element) {
+      this.menu = false;
+      if (element == "start") {
+        window.scrollTo(0, 0);
+        return;
+      }
+
+      const el = document.getElementById(element);
+      window.scrollTo(0, el.offsetTop - 100); // Navbar offset
+    },
   },
 };
 </script>
@@ -124,15 +134,14 @@ export default {
   background-color: rgba(21, 21, 21, 0.8);
   backdrop-filter: blur(15px);
   width: 100%;
-  padding: 20px 160px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: fixed;
 
   .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
 
     .logo {
       display: flex;
@@ -321,18 +330,6 @@ export default {
         }
       }
     }
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .container {
-    padding: 20px 80px;
-  }
-}
-
-@media only screen and (max-width: 920px) {
-  .container {
-    padding: 20px 20px;
   }
 }
 

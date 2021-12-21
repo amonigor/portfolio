@@ -16,7 +16,7 @@
         </a>
       </div>
 
-      <a href="#" class="more"> saiba mais </a>
+      <a href="#" class="more" @click.prevent="scrollPage('about-me')"> saiba mais </a>
     </div>
   </header>
 </template>
@@ -24,17 +24,21 @@
 <script>
 export default {
   name: "Banner",
+  methods: {
+    scrollPage: function (element) {
+      const el = document.getElementById(element);
+      window.scrollTo(0, (el.offsetTop - 100)); // Navbar offset
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 .container {
-  padding: 190px 160px 120px 160px;
+  padding-top: 190px;
+  padding-bottom: 120px;
 
   .content {
-    max-width: 1200px;
-    margin: 0 auto;
-
     h1 {
       font-size: 5rem;
       color: $white;
@@ -95,7 +99,7 @@ export default {
       text-decoration: none;
       color: $white;
       border: 2px solid $white;
-      border-radius: 5px;
+      border-radius: 0.313rem;
       padding: 8px 12px;
       transition-duration: 0.2s;
 
@@ -105,18 +109,6 @@ export default {
         font-weight: bold;
       }
     }
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .container {
-    padding: 190px 80px 120px 80px;
-  }
-}
-
-@media only screen and (max-width: 920px) {
-  .container {
-    padding: 190px 20px 120px 20px;
   }
 }
 </style>
