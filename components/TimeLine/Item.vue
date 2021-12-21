@@ -93,4 +93,12 @@ export default {
     margin-bottom: 0;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .timeline-item {
+    .item-text {
+      width: calc(95% - 3.938rem);
+    }
+  }
+}
 </style>
