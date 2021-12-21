@@ -28,6 +28,7 @@
       </div>
 
       <Skills />
+      <TimeLine />
     </div>
   </section>
 </template>
