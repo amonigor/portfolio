@@ -136,6 +136,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   background-color: rgba(21, 21, 21, 0.8);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(15px);
   width: 100%;
   padding-top: 20px;
