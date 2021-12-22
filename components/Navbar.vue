@@ -2,7 +2,11 @@
   <nav class="container" id="navbar">
     <div class="content">
       <div class="logo">
-        <img src="~/assets/img/logo.svg" alt="amonigor.dev" />
+        <img
+          src="~/assets/img/logo.svg"
+          alt="amonigor.dev"
+          @click.prevent="scrollPage('start')"
+        />
       </div>
 
       <div class="menu-button" @click.prevent="toggleMenu()">
@@ -146,6 +150,7 @@ export default {
     .logo {
       display: flex;
       align-items: center;
+      cursor: pointer;
     }
 
     .menu-button {
