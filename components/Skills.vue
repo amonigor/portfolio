@@ -1,6 +1,6 @@
 <template>
   <div class="skills">
-    <h2 class="section-subtitle">minhas skills</h2>
+    <h2 class="section-subtitle">{{ $t('sections.about.myskills.title') }}</h2>
 
     <div class="skill-container">
       <div class="skill-set">
@@ -10,16 +10,8 @@
         </p>
 
         <div class="description">
-          <p>
-            Desde o começo da minha experiência profissional, fiz front-end
-            voltados para a web, então tenho bastante experiência com HTML, CSS
-            e JavaScript, também utilizei bibliotecas como BootStrap e JQuery
-            para facilitar no desenvolvimento.
-          </p>
-          <p>
-            Também tenho experiência com frameworks JavaScript como VueJS e
-            Nuxt.
-          </p>
+          <p>{{ $t('sections.about.myskills.frontend.firstParagraph') }}</p>
+          <p>{{ $t('sections.about.myskills.frontend.secondParagraph') }}</p>
         </div>
 
         <div class="skills-icons">
@@ -47,15 +39,8 @@
         </p>
 
         <div class="description">
-          <p>
-            Para o desenvolvimento de back-end tenho muita experiência com PHP,
-            e também com o framework Laravel e Lumen. Para a parte de banco de
-            dados utilizo sempre o MySql.
-          </p>
-          <p>
-            Estou no momento estudando outras ferramentas para back-end, como
-            .NET e NestJS.
-          </p>
+          <p>{{ $t('sections.about.myskills.backend.firstParagraph') }}</p>
+          <p>{{ $t('sections.about.myskills.backend.secondParagraph') }}</p>
         </div>
 
         <div class="skills-icons">

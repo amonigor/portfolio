@@ -1,6 +1,6 @@
 <template>
-  <div class="timeline">
-    <h2 class="section-subtitle">minha trajetória</h2>
+  <div class="timeline" v-if="items.length > 0">
+    <h2 class="section-subtitle">{{ $t('sections.about.timeline') }}</h2>
 
     <div class="timeline-content">
       <div class="line">&nbsp;</div>
@@ -20,14 +20,21 @@
 </template>
 
 <script>
-import items from "~/static/timeline/data.json";
-
 export default {
   name: "TimeLine",
   data() {
     return {
-      items: items
+      items: [],
+    };
+  },
+  async created() {
+    let data;
+    if (this.$i18n.locale == "en") {
+      data = await import ("~/static/timeline/en/data.json");
+    } else {
+      data = await import ("~/static/timeline/pt/data.json");
     }
+    this.items = data.default;
   },
 };
 </script>
@@ -41,7 +48,7 @@ export default {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    
+
     .line {
       content: "";
       flex: 1;

@@ -1,20 +1,20 @@
 <template>
   <section class="container" id="contact">
     <div class="content">
-      <h1 class="section-title">contato</h1>
+      <h1 class="section-title">{{ $t('sections.contact.title') }}</h1>
       <div class="contact-container">
         <ContactItem
-          title="Onde estou"
+          :title="$t('sections.contact.location.title')"
           icon="location"
-          text="São Vicente, São Paulo - Brasil"
+          :text="$t('sections.contact.location.content')"
         />
         <ContactItem
-          title="Envie um e-mail"
+          :title="$t('sections.contact.email.title')"
           icon="mail"
-          text="contato@amonigor.dev"
+          :text="$t('sections.contact.email.content')"
         />
         <ContactItem
-          title="Chamada ou whatsapp"
+          :title="$t('sections.contact.call.title')"
           icon="phone"
           text="+55 13 99138-1661"
         />

@@ -2,7 +2,7 @@
   <footer class="container">
     <div class="content">
       <div class="left">
-        <p>© Todos os Diretos Reservados - <span>Igor Amon</span></p>
+        <p>© {{ $t('sections.footer') }} - <span>Igor Amon</span></p>
         <p>Design by <span>Igor Amon</span></p>
       </div>
       <div class="right">

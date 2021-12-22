@@ -2,13 +2,21 @@
   <header class="container">
     <div class="content">
       <h1>Igor Amon</h1>
-      <p>Desenvolvedor Full Stack</p>
+      <p>{{ $t("sections.banner.role") }}</p>
 
       <div class="links">
-        <a href="mailto:amon.igorlr@gmail.com" target="_blank" title="e-mail">
+        <a
+          :href="`mailto:${$t('sections.banner.email')}`"
+          target="_blank"
+          title="e-mail"
+        >
           <img src="~/assets/img/icons/mail/bluegreen1.svg" />
         </a>
-        <a href="https://www.linkedin.com/in/igor-amon/" target="_blank" title="linkedin">
+        <a
+          href="https://www.linkedin.com/in/igor-amon/"
+          target="_blank"
+          title="linkedin"
+        >
           <img src="~/assets/img/icons/linkedin/bluegreen1.svg" />
         </a>
         <a href="https://github.com/amonigor" target="_blank" title="github">
@@ -16,7 +24,9 @@
         </a>
       </div>
 
-      <a href="#" class="more" @click.prevent="scrollPage('about-me')"> saiba mais </a>
+      <a href="#" class="more" @click.prevent="scrollPage('about-me')">
+        {{ $t('sections.banner.button') }}
+      </a>
     </div>
   </header>
 </template>
@@ -27,9 +37,9 @@ export default {
   methods: {
     scrollPage: function (element) {
       const el = document.getElementById(element);
-      window.scrollTo(0, (el.offsetTop - 100)); // Navbar offset
-    }
-  }
+      window.scrollTo(0, el.offsetTop - 100); // Navbar offset
+    },
+  },
 };
 </script>
 
@@ -103,7 +113,8 @@ export default {
       padding: 8px 12px;
       transition-duration: 0.2s;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: $white;
         color: $dark-grey;
         font-weight: bold;

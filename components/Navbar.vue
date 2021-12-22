@@ -5,7 +5,7 @@
         <img
           src="~/assets/img/logo.svg"
           alt="amonigor.dev"
-          @click.prevent="scrollPage('start')"
+          @click.prevent="scrollPage('home')"
         />
       </div>
 
@@ -35,17 +35,17 @@
       </div>
 
       <div class="links" :class="[menu ? 'open' : '']">
-        <a href="#" class="section" @click.prevent="scrollPage('start')">
-          <p>início</p>
+        <a href="#" class="section" @click.prevent="scrollPage('home')">
+          <p>{{ $t("sections.home.title") }}</p>
         </a>
         <a href="#" class="section" @click.prevent="scrollPage('about-me')">
-          <p>sobre mim</p>
+          <p>{{ $t("sections.about.title") }}</p>
         </a>
         <a href="#" class="section" @click.prevent="scrollPage('portfolio')">
-          <p>portfólio</p>
+          <p>{{ $t("sections.portfolio.title") }}</p>
         </a>
         <a href="#" class="section" @click.prevent="scrollPage('contact')">
-          <p>contato</p>
+          <p>{{ $t("sections.contact.title") }}</p>
         </a>
 
         <div class="others">
@@ -79,17 +79,17 @@
           <a
             href="#"
             class="language"
-            title="Mude o idioma"
+            :title="$t('navbar.changeLanguage')"
             @click.prevent="changeLanguage"
           >
             <img
               src="~/assets/img/logos/brasil.svg"
-              :class="[language == 'brasil' ? 'selected' : '']"
+              :class="[$i18n.locale == 'pt' ? 'selected' : '']"
               alt="Português do Brasil"
             />
             <img
               src="~/assets/img/logos/usa.svg"
-              :class="[language == 'usa' ? 'selected' : '']"
+              :class="[$i18n.locale == 'en' ? 'selected' : '']"
               alt="Português do Brasil"
             />
           </a>
@@ -110,10 +110,10 @@ export default {
   },
   methods: {
     changeLanguage: function () {
-      if (this.language == "brasil") {
-        this.language = "usa";
+      if (this.$i18n.locale == "pt") {
+        this.$i18n.setLocale("en");
       } else {
-        this.language = "brasil";
+        this.$i18n.setLocale("pt");
       }
     },
     toggleMenu: function () {
@@ -121,7 +121,7 @@ export default {
     },
     scrollPage: function (element) {
       this.menu = false;
-      if (element == "start") {
+      if (element == "home") {
         window.scrollTo(0, 0);
         return;
       }

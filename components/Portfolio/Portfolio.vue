@@ -1,7 +1,7 @@
 <template>
   <section class="container" id="portfolio">
     <div class="content">
-      <h1 class="section-title">portfólio</h1>
+      <h1 class="section-title">{{ $t('sections.portfolio.title') }}</h1>
 
       <div class="portfolio-container">
         <PortfolioItem
@@ -19,14 +19,21 @@
 </template>
 
 <script>
-import items from "~/static/portfolio/data.json";
-
 export default {
   name: "Portfolio",
   data() {
     return {
-      items: items,
+      items: [],
     };
+  },
+  async created() {
+    let data;
+    if (this.$i18n.locale == "en") {
+      data = await import ("~/static/portfolio/en/data.json");
+    } else {
+      data = await import ("~/static/portfolio/pt/data.json");
+    }
+    this.items = data.default;
   },
 };
 </script>

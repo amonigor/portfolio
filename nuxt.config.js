@@ -1,3 +1,6 @@
+import pt from './locales/pt';
+import en from './locales/en';
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -5,9 +8,6 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'amonigor',
-    htmlAttrs: {
-      lang: 'pt-BR'
-    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -61,10 +61,35 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/style-resources',
+    '@nuxtjs/i18n'
   ],
 
   styleResources: {
     scss: ['./assets/scss/*.scss'],
+  },
+
+  i18n: {
+    locales: [
+      {
+        code: 'pt',
+        iso: 'pt-BR'
+      },
+      {
+        code: 'en',
+        iso: 'en-US'
+      }
+    ],
+    defaultLocale: 'pt',
+    vueI18n: {
+      fallbackLocale: 'pt',
+      messages: { pt, en }
+    },
+    baseUrl: 'https://amonigor.dev',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -1,30 +1,10 @@
 <template>
   <section class="container" id="about-me">
     <div class="content">
-      <h1 class="section-title">sobre mim</h1>
+      <h1 class="section-title">{{ $t('sections.about.title') }}</h1>
       <div class="description">
-        <p>
-          Olá! Me chamo <span>Igor Amon</span> e atuo como
-          <span>Desenvolvedor Full Stack</span>, com aproximadamente 3 anos de
-          experiência na área de desenvolvimento web. Trabalho hoje na
-          <a
-            href="https://www.linkedin.com/company/xgrow-experience/"
-            target="_blank"
-            >XGrow Learning Experience</a
-          >
-          implementando front-end, e quando necessário back-end também.
-        </p>
-        <p>
-          Tenho <span>formação técnica</span> pela
-          <a href="https://etecdrc.com.br/" target="_blank"
-            >ETEC Dra. Ruth Cardoso</a
-          >, lugar responsável por me mostrar o mundo de desenvolvimento e que
-          me fez apaixonar pela área. Hoje estou cursando
-          <span>Sistemas de Informação</span> na
-          <a href="https://www.unisantos.br/" target="_blank"
-            >Universidade Católica de Santos</a
-          >.
-        </p>
+        <p v-html="$t('sections.about.firstParagraph')"></p>
+        <p v-html="$t('sections.about.secondParagraph')"></p>
       </div>
 
       <Skills />
@@ -49,14 +29,14 @@ export default {
         font-weight: 400;
         font-size: 1rem;
 
-        span {
+        ::v-deep span {
           color: $blue-green-1;
           font-weight: 600;
           font-size: 1rem;
           text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
         }
 
-        a {
+        ::v-deep a {
           color: $blue-green-1;
           font-size: 1rem;
           text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
