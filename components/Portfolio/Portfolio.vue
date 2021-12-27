@@ -3,7 +3,7 @@
     <div class="content">
       <h1 class="section-title">{{ $t('sections.portfolio.title') }}</h1>
 
-      <div class="portfolio-container">
+      <div class="portfolio-container fade-left">
         <PortfolioItem
           v-for="(item, idx) in items"
           v-bind:key="idx"

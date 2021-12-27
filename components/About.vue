@@ -2,7 +2,7 @@
   <section class="container" id="about-me">
     <div class="content">
       <h1 class="section-title">{{ $t('sections.about.title') }}</h1>
-      <div class="description">
+      <div class="description fade-top">
         <p v-html="$t('sections.about.firstParagraph')"></p>
         <p v-html="$t('sections.about.secondParagraph')"></p>
       </div>

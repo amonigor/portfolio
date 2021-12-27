@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-item">
+  <div class="contact-item" :class="[`fade-${effect}`]">
     <p class="title">
       <img :src="require(`~/assets/img/icons/${icon}/bluegreen2.svg`)" />
       {{ title }}
@@ -23,6 +23,11 @@ export default {
     text: {
       required: true,
       type: String,
+    },
+    effect: {
+      required: false,
+      type: String,
+      default: 'top'
     },
   },
 };
