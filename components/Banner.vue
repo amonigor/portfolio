@@ -1,5 +1,5 @@
 <template>
-  <header class="container">
+  <header class="container" id="banner">
     <div class="content">
       <h1>Igor Amon</h1>
       <p>{{ $t("sections.banner.role") }}</p>

@@ -1,5 +1,5 @@
 <template>
-  <div class="timeline">
+  <div class="timeline" id="#timeline">
     <h2 class="section-subtitle">{{ $t('sections.about.timeline') }}</h2>
 
     <div class="timeline-content">

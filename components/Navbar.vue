@@ -1,7 +1,7 @@
 <template>
   <nav class="container" id="navbar">
     <div class="content">
-      <div class="logo">
+      <div class="logo" v-anime="animations.slideLeftBounceFast">
         <img
           src="~/assets/img/logo.svg"
           alt="amonigor.dev"
@@ -9,7 +9,11 @@
         />
       </div>
 
-      <div class="menu-button" @click.prevent="toggleMenu()">
+      <div
+        class="menu-button"
+        @click.prevent="toggleMenu()"
+        v-anime="animations.slideRightBounceFast"
+      >
         <button :class="[menu ? 'close' : '']">
           <img
             src="~/assets/img/icons/menu/white.svg"
@@ -34,7 +38,11 @@
         </button>
       </div>
 
-      <div class="links" :class="[menu ? 'open' : '']">
+      <div
+        class="links"
+        :class="[menu ? 'open' : '']"
+        v-anime="animations.slideRightBounceFast"
+      >
         <a href="#" class="section" @click.prevent="scrollPage('home')">
           <p>{{ $t("sections.home.title") }}</p>
         </a>
@@ -100,22 +108,25 @@
 </template>
 
 <script>
+import animations from "~/static/animations";
+
 export default {
   name: "Navbar",
   data() {
     return {
       language: "brasil",
       menu: false,
+      animations: animations,
     };
   },
   methods: {
     changeLanguage: function () {
       if (this.$i18n.locale == "pt") {
         this.$i18n.setLocale("en");
-        window.location.href = '/en';
+        window.location.href = "/en";
       } else {
         this.$i18n.setLocale("pt");
-        window.location.href = '/';
+        window.location.href = "/";
       }
     },
     toggleMenu: function () {
