@@ -112,8 +112,10 @@ export default {
     changeLanguage: function () {
       if (this.$i18n.locale == "pt") {
         this.$i18n.setLocale("en");
+        window.location.href = '/en';
       } else {
         this.$i18n.setLocale("pt");
+        window.location.href = '/';
       }
     },
     toggleMenu: function () {
