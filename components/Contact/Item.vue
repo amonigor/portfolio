@@ -4,7 +4,8 @@
       <img :src="require(`~/assets/img/icons/${icon}/bluegreen2.svg`)" />
       {{ title }}
     </p>
-    <p class="text">{{ text }}</p>
+    <p class="text" v-if="link == ''">{{ text }}</p>
+    <a :href="link" class="text" target="_blank" v-else>{{ text }}</a>
   </div>
 </template>
 
@@ -29,6 +30,11 @@ export default {
       type: String,
       default: 'top'
     },
+    link: {
+      required: false,
+      type: String,
+      default: ''
+    }
   },
 };
 </script>
