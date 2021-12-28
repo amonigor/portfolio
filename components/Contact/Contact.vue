@@ -7,7 +7,6 @@
           :title="$t('sections.contact.location.title')"
           icon="location"
           :text="$t('sections.contact.location.content')"
-          effect="left"
         />
         <ContactItem
           :title="$t('sections.contact.email.title')"
@@ -18,7 +17,6 @@
           :title="$t('sections.contact.call.title')"
           icon="phone"
           text="+55 13 99138-1661"
-          effect="right"
         />
       </div>
     </div>

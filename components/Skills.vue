@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <div class="skill-set fade-right">
+      <div class="skill-set fade-left">
         <p class="title">
           <img src="~/assets/img/back.svg" />
           Back-end
