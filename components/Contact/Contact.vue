@@ -1,7 +1,7 @@
 <template>
   <section class="container" id="contact">
     <div class="content">
-      <h1 class="section-title fade">{{ $t('sections.contact.title') }}</h1>
+      <h1 class="section-title">{{ $t('sections.contact.title') }}</h1>
       <div class="contact-container">
         <ContactItem
           :title="$t('sections.contact.location.title')"

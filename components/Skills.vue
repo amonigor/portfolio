@@ -1,9 +1,9 @@
 <template>
   <div class="skills">
-    <h2 class="section-subtitle fade">{{ $t('sections.about.myskills.title') }}</h2>
+    <h2 class="section-subtitle">{{ $t('sections.about.myskills.title') }}</h2>
 
     <div class="skill-container">
-      <div class="skill-set fade-left">
+      <div class="skill-set">
         <p class="title">
           <img src="~/assets/img/front.svg" />
           Front-end
@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <div class="skill-set fade-left">
+      <div class="skill-set">
         <p class="title">
           <img src="~/assets/img/back.svg" />
           Back-end

@@ -1,9 +1,9 @@
 <template>
   <section class="container" id="portfolio">
     <div class="content">
-      <h1 class="section-title fade">{{ $t('sections.portfolio.title') }}</h1>
+      <h1 class="section-title">{{ $t('sections.portfolio.title') }}</h1>
 
-      <div class="portfolio-container fade-left">
+      <div class="portfolio-container">
         <PortfolioItem
           v-for="(item, idx) in items"
           v-bind:key="idx"

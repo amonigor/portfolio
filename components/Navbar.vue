@@ -1,7 +1,7 @@
 <template>
   <nav class="container" id="navbar">
     <div class="content">
-      <div class="logo fade">
+      <div class="logo">
         <img
           src="~/assets/img/logo.svg"
           alt="amonigor.dev"
@@ -35,16 +35,16 @@
       </div>
 
       <div class="links" :class="[menu ? 'open' : '']">
-        <a href="#" class="section fade" @click.prevent="scrollPage('home')">
+        <a href="#" class="section" @click.prevent="scrollPage('home')">
           <p>{{ $t("sections.home.title") }}</p>
         </a>
-        <a href="#" class="section fade" @click.prevent="scrollPage('about-me')">
+        <a href="#" class="section" @click.prevent="scrollPage('about-me')">
           <p>{{ $t("sections.about.title") }}</p>
         </a>
-        <a href="#" class="section fade" @click.prevent="scrollPage('portfolio')">
+        <a href="#" class="section" @click.prevent="scrollPage('portfolio')">
           <p>{{ $t("sections.portfolio.title") }}</p>
         </a>
-        <a href="#" class="section fade" @click.prevent="scrollPage('contact')">
+        <a href="#" class="section" @click.prevent="scrollPage('contact')">
           <p>{{ $t("sections.contact.title") }}</p>
         </a>
 
@@ -52,7 +52,7 @@
           <a
             href="https://www.linkedin.com/in/igor-amon/"
             target="_blank"
-            class="social fade"
+            class="social"
             title="Linkedin"
           >
             <img src="~/assets/img/icons/linkedin/white40.svg" alt="Linkedin" />
@@ -65,7 +65,7 @@
           <a
             href="https://github.com/amonigor"
             target="_blank"
-            class="social fade"
+            class="social"
             title="Github"
           >
             <img src="~/assets/img/icons/github/white40.svg" alt="Github" />
@@ -78,7 +78,7 @@
 
           <a
             href="#"
-            class="language fade"
+            class="language"
             :title="$t('navbar.changeLanguage')"
             @click.prevent="changeLanguage"
           >

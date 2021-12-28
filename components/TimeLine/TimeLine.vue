@@ -1,8 +1,8 @@
 <template>
   <div class="timeline">
-    <h2 class="section-subtitle fade">{{ $t('sections.about.timeline') }}</h2>
+    <h2 class="section-subtitle">{{ $t('sections.about.timeline') }}</h2>
 
-    <div class="timeline-content fade-left">
+    <div class="timeline-content">
       <div class="line">{{ items.length > 0 ? '&nbsp;' : '' }}</div>
       <div class="items">
         <TimeLineItem

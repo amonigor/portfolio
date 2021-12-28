@@ -1,6 +1,6 @@
 <template>
   <header class="container">
-    <div class="content fade-top">
+    <div class="content">
       <h1>Igor Amon</h1>
       <p>{{ $t("sections.banner.role") }}</p>
 
@@ -24,7 +24,7 @@
         </a>
       </div>
 
-      <a href="#" class="more fade-top" @click.prevent="scrollPage('about-me')">
+      <a href="#" class="more" @click.prevent="scrollPage('about-me')">
         {{ $t('sections.banner.button') }}
       </a>
     </div>
