@@ -2,7 +2,7 @@
   <footer class="container">
     <div class="content">
       <div class="left">
-        <p>© {{ $t('sections.footer') }} - <span>Igor Amon</span></p>
+        <p>© {{ $t("sections.footer") }} - <span>Igor Amon</span></p>
         <p>Design by <span>Igor Amon</span></p>
       </div>
       <div class="right">
@@ -74,6 +74,8 @@ export default {
 @media only screen and (max-width: 475px) {
   .container {
     .content {
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
 
       .left {
