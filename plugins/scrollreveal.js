@@ -22,7 +22,7 @@ for (let i = 0; i < document.querySelectorAll('.skill-set').length; i++) {
     {
       ...slideToRight,
       distance: '1000%',
-      delay: (150 * (i + 1))
+      delay: (150 * i)
     }
   );
 }
@@ -34,7 +34,7 @@ for (let i = 0; i < document.querySelectorAll('.portfolio-item').length; i++) {
     {
       ...slideToRight,
       distance: '1000%',
-      delay: (150 * (i + 1))
+      delay: (150 * i)
     }
   );
 }
@@ -46,7 +46,7 @@ for (let i = 0; i < document.querySelectorAll('.timeline-item').length; i++) {
     {
       ...slideToRight,
       distance: '1000%',
-      delay: (150 * (i + 1))
+      delay: (150 * i)
     }
   );
 }
@@ -58,7 +58,7 @@ for (let i = 0; i < document.querySelectorAll('.contact-item').length; i++) {
     {
       ...slideToRight,
       distance: '1000%',
-      delay: (150 * (i + 1))
+      delay: (150 * i)
     }
   );
 }
