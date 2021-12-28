@@ -5,13 +5,14 @@
 
       <div class="portfolio-container">
         <PortfolioItem
-          v-for="(item, idx) in items"
+          v-for="(item, idx) in $t('sections.portfolio.items')"
           v-bind:key="idx"
           :title="item.title"
           :description="item.description"
           :button-link="item.buttonLink"
           :button-text="item.buttonText"
           :image="item.image"
+          :id="idx"
         />
       </div>
     </div>
@@ -21,20 +22,6 @@
 <script>
 export default {
   name: "Portfolio",
-  data() {
-    return {
-      items: [],
-    };
-  },
-  async created() {
-    let data;
-    if (this.$i18n.locale == "en") {
-      data = await import ("~/static/portfolio/en/data.json");
-    } else {
-      data = await import ("~/static/portfolio/pt/data.json");
-    }
-    this.items = data.default;
-  },
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-item">
+  <div class="contact-item" :id="`contact-item-${id}`">
     <p class="title">
       <img :src="require(`~/assets/img/icons/${icon}/bluegreen2.svg`)" />
       {{ title }}
@@ -29,6 +29,10 @@ export default {
       required: false,
       type: String,
       default: ''
+    },
+    id: {
+      required: true,
+      type: Number
     }
   },
 };

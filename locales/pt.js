@@ -47,10 +47,65 @@ export default {
           back-end, como .NET e NestJS.`,
         }
       },
-      timeline: 'minha trajetória'
+      timeline: {
+        title: 'minha trajetória',
+        items: [
+          {
+            "type": "study",
+            "title": "Técnico em Informática",
+            "place": "ETEC Dra. Ruth Cardoso",
+            "time": "Fev. 2018 - Jun. 2019",
+            "description": "Primeiro contato com o mundo da programação, onde aprendi HTML, CSS, JS e PHP"
+          },
+          {
+            "type": "work",
+            "title": "Estágio",
+            "place": "Triad Productivity Solutions",
+            "time": "Ago. 2019 - Fev. 2021",
+            "description": "Primeira experiência profissional, aprendi muito com a empresa e tive a oportunidade de melhorar minhas skills com front e back-end"
+          },
+          {
+            "type": "study",
+            "title": "Bacharelado em Sistemas de Informação",
+            "place": "Universidade Católica de Santos",
+            "time": "Fev. 2020 - até o momento",
+            "description": "Minha entrada no mundo acadêmico, onde estou aprendendo mais sobre computação, análise e desenvolvimento de sistemas e também administração."
+          },
+          {
+            "type": "work",
+            "title": "Desenvolvedor Full Stack - Júnior",
+            "place": "XGrow Learning Experience",
+            "time": "Fev. 2021 - até o momento",
+            "description": "Implementações de front-end, e quando necessário back-end. Onde tive meu primeiro contato com Laravel e VueJS."
+          },
+          {
+            "type": "work",
+            "title": "Desenvolvedor Full Stack - Júnior",
+            "place": "Nerau CX",
+            "time": "Jun. 2021 - Ago. 2021",
+            "description": "Implementações de front-end e back-end. Onde tive mais experiência de desenvolvimento back-end utilizando Laravel."
+          }
+        ]
+      }
     },
     portfolio: {
       title: 'portfólio',
+      items: [
+        {
+          "title": "Meu site",
+          "description": "Meu próprio site, feito em Nuxt, com o código aberto no Github e deploy automático na Vercel.",
+          "buttonLink": "https://github.com/amonigor/portfolio",
+          "buttonText": "acessar github",
+          "image": "amonigor.svg"
+        },
+        {
+          "title": "Helptran - Soluções em CNH",
+          "description": "Freelance feito com Lumen para fazer consultas à API do Youtube e envios de email.",
+          "buttonLink": "http://helptran.com.br/",
+          "buttonText": "acessar site",
+          "image": "helptran.svg"
+        }
+      ]
     },
     contact: {
       title: 'contato',

@@ -3,7 +3,7 @@
     <h2 class="section-subtitle">{{ $t('sections.about.myskills.title') }}</h2>
 
     <div class="skill-container">
-      <div class="skill-set">
+      <div class="skill-set" id="skill-set-0">
         <p class="title">
           <img src="~/assets/img/front.svg" />
           Front-end
@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <div class="skill-set">
+      <div class="skill-set" id="skill-set-1">
         <p class="title">
           <img src="~/assets/img/back.svg" />
           Back-end

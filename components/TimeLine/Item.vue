@@ -1,5 +1,5 @@
 <template>
-  <div class="timeline-item">
+  <div class="timeline-item" :id="`timeline-item-${id}`">
     <div class="item-icon">
       <img src="~/assets/img/icons/hat/white.svg" v-if="type == 'study'" />
       <img src="~/assets/img/icons/work/white.svg" v-if="type == 'work'" />
@@ -37,6 +37,10 @@ export default {
       required: true,
       type: String,
     },
+    id: {
+      required: true,
+      type: Number
+    }
   },
 };
 </script>

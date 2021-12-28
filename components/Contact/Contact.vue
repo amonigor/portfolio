@@ -7,18 +7,21 @@
           :title="$t('sections.contact.location.title')"
           icon="location"
           :text="$t('sections.contact.location.content')"
+          :id="0"
         />
         <ContactItem
           :title="$t('sections.contact.email.title')"
           icon="mail"
           :text="$t('sections.contact.email.content')"
           :link="`mailto:${$t('sections.contact.email.content')}`"
+          :id="1"
         />
         <ContactItem
           :title="$t('sections.contact.call.title')"
           icon="phone"
           text="+55 13 99138-1661"
           link="https://api.whatsapp.com/send?phone=55 (13) 99138-1661"
+          :id="2"
         />
       </div>
     </div>

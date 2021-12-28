@@ -1,18 +1,19 @@
 <template>
   <div class="timeline" id="#timeline">
-    <h2 class="section-subtitle">{{ $t('sections.about.timeline') }}</h2>
+    <h2 class="section-subtitle">{{ $t('sections.about.timeline.title') }}</h2>
 
     <div class="timeline-content">
-      <div class="line">{{ items.length > 0 ? '&nbsp;' : '' }}</div>
+      <div class="line">&nbsp;</div>
       <div class="items">
         <TimeLineItem
-          v-for="(item, idx) in items"
+          v-for="(item, idx) in $t('sections.about.timeline.items')"
           v-bind:key="idx"
           :type="item.type"
           :title="item.title"
           :place="item.place"
           :time="item.time"
           :description="item.description"
+          :id="idx"
         />
       </div>
     </div>
@@ -22,20 +23,6 @@
 <script>
 export default {
   name: "TimeLine",
-  data() {
-    return {
-      items: [],
-    };
-  },
-  async created() {
-    let data;
-    if (this.$i18n.locale == "en") {
-      data = await import ("~/static/timeline/en/data.json");
-    } else {
-      data = await import ("~/static/timeline/pt/data.json");
-    }
-    this.items = data.default;
-  },
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-item">
+  <div class="portfolio-item" :id="`portfolio-item-${id}`">
     <img :src="require(`~/assets/img/portfolio/${image}`)" alt="" />
     <div class="portfolio-item-content">
       <p class="title">{{ title }}</p>
@@ -33,6 +33,10 @@ export default {
       required: true,
       type: String,
     },
+    id: {
+      required: true,
+      type: Number
+    }
   },
 };
 </script>
