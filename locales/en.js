@@ -104,6 +104,13 @@ export default {
           "buttonLink": "http://helptran.com.br/",
           "buttonText": "access website",
           "image": "helptran.svg"
+        },
+        {
+          "title": "XGROW - Landing Page",
+          "description": "Landing page made with HTML, CSS and JavaScript, using ScrollReveal for the animations",
+          "buttonLink": "https://www.xgrow.com.br/",
+          "buttonText": "access website",
+          "image": "xgrow.svg"
         }
       ]
     },
