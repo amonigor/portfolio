@@ -75,7 +75,7 @@ export default {
             "type": "work",
             "title": "Desenvolvedor Full Stack - Júnior",
             "place": "XGrow Learning Experience",
-            "time": "Fev. 2021 - até o momento",
+            "time": "Fev. 2021 - Mai. 2022",
             "description": "Implementações de front-end, e quando necessário back-end. Onde tive meu primeiro contato com Laravel e VueJS."
           },
           {
@@ -84,6 +84,13 @@ export default {
             "place": "Nerau CX",
             "time": "Jun. 2021 - Ago. 2021",
             "description": "Implementações de front-end e back-end. Onde tive mais experiência de desenvolvimento back-end utilizando Laravel."
+          },
+          {
+            "type": "work",
+            "title": "Desenvolvedor Front-end",
+            "place": "Blueticket",
+            "time": "Mai. 2022 - até o momento",
+            "description": "Implementações de front-end utilizando do framework VueJS e a biblioteca Vuetify."
           }
         ]
       }
