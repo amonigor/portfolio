@@ -87,7 +87,7 @@ export default {
           },
           {
             "type": "work",
-            "title": "Desenvolvedor Front-end",
+            "title": "Front-end Developer",
             "place": "Blueticket",
             "time": "May 2022 - until the moment",
             "description": "Front-end implementation using VueJS framework with the Vuetify library."
