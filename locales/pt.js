@@ -89,8 +89,15 @@ export default {
             "type": "work",
             "title": "Desenvolvedor Front-end",
             "place": "Blueticket",
-            "time": "Mai. 2022 - até o momento",
+            "time": "Mai. 2022 - Ago. 2022",
             "description": "Implementações de front-end utilizando do framework VueJS e a biblioteca Vuetify."
+          },
+          {
+            "type": "work",
+            "title": "Engenheiro de Software | Front-end",
+            "place": "Bentley Systems",
+            "time": "Set. 2022 - até o momento",
+            "description": "Implementações de front-end utilizando do framework VueJS."
           }
         ]
       }
