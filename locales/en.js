@@ -89,14 +89,14 @@ export default {
             "type": "work",
             "title": "Front-end Developer",
             "place": "Blueticket",
-            "time": "May 2022 - until the moment",
+            "time": "May 2022 - Aug. 2022",
             "description": "Front-end implementation using VueJS framework with the Vuetify library."
           },
           {
             "type": "work",
             "title": "Software Engineer | Front-end",
             "place": "Bentley Systems",
-            "time": "Set. 2022 - até o momento",
+            "time": "Sep. 2022 - until the moment",
             "description": "Front-end implementation using VueJS framework."
           }
         ]
