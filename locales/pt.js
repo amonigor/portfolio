@@ -12,14 +12,14 @@ export default {
     about: {
       title: 'sobre mim',
       firstParagraph: `Olá! Me chamo <span>Igor Amon</span> e atuo como
-      <span>Desenvolvedor Full Stack</span>, com aproximadamente 3 anos de
+      <span>Engenheiro de Software</span>, com aproximadamente 5 anos de
       experiência na área de desenvolvimento web. Trabalho hoje na
       <a
-        href="https://www.linkedin.com/company/xgrow-experience/"
+        href="https://www.bentley.com/"
         target="_blank"
-        >XGrow Learning Experience</a
+        >Bentley Systems</a
       >
-      implementando front-end, e quando necessário back-end também.`,
+      implementando front-end com Vue e React.`,
       secondParagraph: `Tenho <span>formação técnica</span> pela
       <a href="https://etecdrc.com.br/" target="_blank"
         >ETEC Dra. Ruth Cardoso</a
