@@ -12,14 +12,14 @@ export default {
     about: {
       title: 'about me',
       firstParagraph: `Hi! I'm <span>Igor Amon</span> and I work as
-      <span>Full Stack Developer</span>, with approximately 3 years of experience
+      <span>Software Engineer</span>, with approximately 5 years of experience
       in web development area. I work at
       <a
-        href="https://www.linkedin.com/company/xgrow-experience/"
+        href="https://www.bentley.com/"
         target="_blank"
-        >XGrow Learning Experience</a
+        >Bentley Systems</a
       >
-      implementing front-end, and when necessary, back-end as well.`,
+      implementing front-end with Vue and React.`,
       secondParagraph: `I have a <span>technical degree</span> from
       <a href="https://etecdrc.com.br/" target="_blank"
         >ETEC Dra. Ruth Cardoso</a
