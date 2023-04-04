@@ -5,7 +5,7 @@ export default {
   sections: {
     home: { title: 'início' },
     banner: {
-      role: 'Desenvolvedor Full Stack',
+      role: 'Engenheiro de Software',
       email: 'contato@amonigor.dev',
       button: 'saiba mais',
     },
