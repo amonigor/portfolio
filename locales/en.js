@@ -96,7 +96,7 @@ export default {
             "type": "work",
             "title": "Software Engineer | Front-end",
             "place": "Bentley Systems",
-            "time": "Sep. 2022 - until the moment",
+            "time": "Sep. 2022 - Jan. 2024",
             "description": "Front-end implementation using VueJS framework."
           }
         ]
