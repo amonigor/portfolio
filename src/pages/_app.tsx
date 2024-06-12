@@ -1,14 +1,14 @@
 import "@/styles/globals.css";
 
+import ThemeProvider from "@/providers/theme-provider";
+
 import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";
-
-import ThemeProvider from "@/providers/theme-provider";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
-export default function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <style jsx global>{`
@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         enableSystem
         disableTransitionOnChange
       >
-        <div className="min-h-screen bg-background font-sans antialiased container">
+        <div className="min-h-screen bg-background font-sans antialiased">
           <Head>
             <title>Igor Amon</title>
           </Head>
@@ -31,4 +31,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </ThemeProvider>
     </>
   );
-}
+};
+
+export default App;
