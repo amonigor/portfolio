@@ -1,0 +1,15 @@
+{
+  "theme": "Theme",
+  "themes": {
+    "dark": "Dark",
+    "light": "Light",
+    "system": "Auto"
+  },
+  "language": "Language",
+  "nav": {
+    "about": "about me",
+    "skills": "skills",
+    "experience": "experience",
+    "contact": "contact"
+  }
+}

@@ -5,6 +5,7 @@ import ThemeProvider from "@/providers/theme-provider";
 import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";
 import Head from "next/head";
+import { appWithTranslation } from "next-i18next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -33,4 +34,4 @@ const App = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default App;
+export default appWithTranslation(App);

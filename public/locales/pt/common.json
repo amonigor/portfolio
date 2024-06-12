@@ -1,0 +1,15 @@
+{
+  "theme": "Tema",
+  "themes": {
+    "dark": "Escuro",
+    "light": "Claro",
+    "system": "Auto"
+  },
+  "language": "Idioma",
+  "nav": {
+    "about": "sobre mim",
+    "skills": "habilidades",
+    "experience": "experiência",
+    "contact": "contato"
+  }
+}

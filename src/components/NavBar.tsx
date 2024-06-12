@@ -10,26 +10,30 @@ import {
 import { Menu } from "lucide-react";
 import Link from "next/link";
 
-const navBarItems = [
-  {
-    name: "about me",
-    href: "/",
-  },
-  {
-    name: "skills",
-    href: "/",
-  },
-  {
-    name: "experience",
-    href: "/",
-  },
-  {
-    name: "contact",
-    href: "/",
-  },
-];
+import { useTranslation } from "next-i18next";
 
 export const NavBar = () => {
+  const { t } = useTranslation();
+
+  const navBarItems = [
+    {
+      name: t("nav.about"),
+      href: "/",
+    },
+    {
+      name: t("nav.skills"),
+      href: "/",
+    },
+    {
+      name: t("nav.experience"),
+      href: "/",
+    },
+    {
+      name: t("nav.contact"),
+      href: "/",
+    },
+  ];
+
   return (
     <header className="sticky top-0 w-full border-b border-border shadow-lg bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/75">
       <div className="md:container py-2 md:py-4 flex items-center justify-between">
