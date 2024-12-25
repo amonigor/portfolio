@@ -9,15 +9,19 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Inter", serif;
+}
+
+@layer components {
+  .glass {
+    @apply border-2 border-black/10 dark:border-white/10 backdrop-blur-sm bg-white/30 dark:bg-white/20;
+  }
 }
