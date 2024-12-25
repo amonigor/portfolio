@@ -4,7 +4,7 @@
   "explorer.fileNesting.patterns": {
     "package.json": ".eslint*, .prettier*, tsconfig*",
     "tailwind.config.ts": "tailwind.config*, postcss.config*",
-    "next.config.js": "next.config*, next-env.d.ts",
+    "next.config.*": "next.config.*, next-env.d.ts, next-i18next.*",
     ".env": ".env*"
   },
   "editor.tabSize": 2,
