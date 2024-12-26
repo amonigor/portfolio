@@ -20,6 +20,7 @@ export default function LanguageToggle() {
 
   return (
     <Dropdown
+      ariaLabel="Select language"
       trigger={<Languages size={24} />}
       value={locale}
       items={[

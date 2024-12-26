@@ -10,6 +10,7 @@ export default function DarkModeToggle() {
 
   return (
     <Dropdown
+      ariaLabel="Select color schema"
       trigger={
         theme === "dark" ? (
           <Moon size={24} />

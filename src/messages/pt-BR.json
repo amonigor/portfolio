@@ -1,4 +1,9 @@
 {
+  "Topbar": {
+    "menu": "Abrir menu de navegação",
+    "darkModeToggle": "Selecione um esquema de cores",
+    "languageToogle": "Selecione uma língua"
+  },
   "DarkMode": {
     "dark": "Escuro",
     "light": "Claro",

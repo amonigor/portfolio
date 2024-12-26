@@ -1,4 +1,9 @@
 {
+  "Topbar": {
+    "menu": "Open navigation menu",
+    "darkModeToggle": "Select color schema",
+    "languageToogle": "Select language"
+  },
   "DarkMode": {
     "dark": "Dark",
     "light": "Light",

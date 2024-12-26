@@ -23,6 +23,7 @@ export default function Mobile({ navItems }: Props) {
       <button
         className="glass group rounded-2xl p-2"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label="Open navigation menu"
       >
         <span
           className={`${

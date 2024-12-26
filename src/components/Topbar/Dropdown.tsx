@@ -3,13 +3,20 @@ import { Check } from "lucide-react";
 import useOutsideClick from "@/hooks/useOutsideClick";
 
 type Props = {
+  ariaLabel?: string;
   trigger: React.ReactNode;
   items: { icon?: React.ReactNode; text: string; value: string }[];
   value: string | undefined;
   onSelect: (value: string) => void;
 };
 
-export default function Dropdown({ trigger, items, value, onSelect }: Props) {
+export default function Dropdown({
+  ariaLabel,
+  trigger,
+  items,
+  value,
+  onSelect,
+}: Props) {
   const {
     ref,
     isInside: isOpen,
@@ -26,6 +33,7 @@ export default function Dropdown({ trigger, items, value, onSelect }: Props) {
       <button
         className="glass group rounded-2xl p-2"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label={ariaLabel}
       >
         <span
           className={`${
