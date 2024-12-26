@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 
 import Topbar from "@/components/Topbar/Topbar";
 import Hero from "@/components/Hero";
+import AboutMe from "@/components/AboutMe";
 
 export async function getStaticProps(context: GetStaticPropsContext) {
   return {
@@ -23,8 +24,9 @@ export default function Home() {
         <title>{t("title")}</title>
       </Head>
       <Topbar />
-      <main className="container mx-auto px-4 md:py-80 py-40">
+      <main className="container mx-auto px-4">
         <Hero />
+        <AboutMe />
       </main>
     </>
   );

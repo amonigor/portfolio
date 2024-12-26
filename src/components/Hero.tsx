@@ -5,7 +5,7 @@ export default function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="relative">
+    <section className="relative h-[95vh] flex flex-col items-center justify-center">
       <p className="text-sm sm:text-lg md:text-xl text-center font-[poppins] pb-2 sm:pb-4 md:pb-6 opacity-70">
         {t("welcome")}
       </p>
@@ -16,7 +16,7 @@ export default function Hero() {
         {t("description")}
       </p>
 
-      <div className="flex flex-col items-center justify-center md:pt-32 pt-16">
+      <div className="flex flex-col items-center justify-center pt-16">
         <Mouse className="motion-preset-oscillate motion-delay-100" />
         <ChevronDown className="motion-preset-oscillate" />
       </div>

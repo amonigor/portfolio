@@ -10,7 +10,7 @@ const DarkModeToggle = dynamic(
 
 export default function Topbar() {
   return (
-    <header className="fixed w-full">
+    <header className="fixed w-full z-50">
       <div className="container mx-auto p-4 flex items-center justify-end gap-2">
         <Navbar />
         <LanguageToggle />
