@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Languages } from "lucide-react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 import Dropdown from "@/components/Topbar/Dropdown";
 
@@ -22,8 +23,30 @@ export default function LanguageToggle() {
       trigger={<Languages size={24} />}
       value={locale}
       items={[
-        { text: "English", value: "en-US" },
-        { text: "Português", value: "pt-BR" },
+        {
+          icon: (
+            <Image
+              src="/images/eua.png"
+              alt="United States of America"
+              width={16}
+              height={16}
+            />
+          ),
+          text: "English",
+          value: "en-US",
+        },
+        {
+          icon: (
+            <Image
+              src="/images/brasil.png"
+              alt="Brasil"
+              width={16}
+              height={16}
+            />
+          ),
+          text: "Português",
+          value: "pt-BR",
+        },
       ]}
       onSelect={(value) => handleLocaleChange(value)}
     />
