@@ -1,7 +1,13 @@
 {
-  "Topbar": {
+  "DarkMode": {
     "dark": "Escuro",
     "light": "Claro",
     "system": "Sistema"
+  },
+  "Navbar": {
+    "aboutMe": "Sobre mim",
+    "skills": "Habilidades",
+    "experience": "Experiência",
+    "contact": "Contato"
   }
 }
