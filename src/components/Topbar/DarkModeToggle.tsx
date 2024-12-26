@@ -2,9 +2,11 @@ import { Moon, Sun, SunMoon } from "lucide-react";
 
 import Dropdown from "@/components/Topbar/Dropdown";
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
 
 export default function DarkModeToggle() {
   const { theme, setTheme } = useTheme();
+  const t = useTranslations("Topbar");
 
   return (
     <Dropdown
@@ -18,9 +20,9 @@ export default function DarkModeToggle() {
         )
       }
       items={[
-        { icon: <Moon size={16} />, text: "Dark", value: "dark" },
-        { icon: <Sun size={16} />, text: "Light", value: "light" },
-        { icon: <SunMoon size={16} />, text: "System", value: "system" },
+        { icon: <Moon size={16} />, text: t("dark"), value: "dark" },
+        { icon: <Sun size={16} />, text: t("light"), value: "light" },
+        { icon: <SunMoon size={16} />, text: t("system"), value: "system" },
       ]}
       value={theme}
       onSelect={(value) => setTheme(value)}
