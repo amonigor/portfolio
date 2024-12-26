@@ -15,7 +15,7 @@ export default function Desktop({ navItems }: Props) {
         {navItems.map((item, index) => (
           <li
             key={index}
-            className="opacity-50 hover:opacity-100 transition px-2"
+            className="opacity-70 dark:opacity-50 hover:opacity-100 transition px-2"
           >
             <Link href={item.href} className="flex items-center gap-2">
               {item.icon}
