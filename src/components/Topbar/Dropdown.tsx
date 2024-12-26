@@ -57,7 +57,7 @@ export default function Dropdown({ trigger, items, value, onSelect }: Props) {
               onClick={() => handleSelect(item.value)}
             >
               {item.icon}
-              <p className="text-base">{item.text}</p>
+              <p className="text-sm">{item.text}</p>
               {item.value === value && <Check size={16} />}
             </button>
           ))}
