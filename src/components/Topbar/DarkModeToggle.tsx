@@ -20,8 +20,8 @@ export default function DarkModeToggle() {
         )
       }
       items={[
-        { icon: <Moon size={16} />, text: t("dark"), value: "dark" },
         { icon: <Sun size={16} />, text: t("light"), value: "light" },
+        { icon: <Moon size={16} />, text: t("dark"), value: "dark" },
         { icon: <SunMoon size={16} />, text: t("system"), value: "system" },
       ]}
       value={theme}
