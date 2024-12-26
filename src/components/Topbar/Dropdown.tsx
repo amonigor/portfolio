@@ -39,11 +39,11 @@ export default function Dropdown({ trigger, items, value, onSelect }: Props) {
       </button>
 
       {isOpen && (
-        <div className="absolute motion-preset-expand motion-duration-150 right-0 glass rounded-2xl mt-1 px-2 divide-y-2 divide-black/10 dark:divide-white/10 min-w-32">
+        <div className="absolute motion-preset-expand motion-duration-150 right-0 glass rounded-2xl mt-1 px-2 divide-y-2 divide-black/10 dark:divide-white/10 min-w-max">
           {items.map((item) => (
             <button
               key={item.value}
-              className="flex items-center gap-1 py-2 w-full"
+              className="flex items-center gap-2 py-2 w-full"
               onClick={() => handleSelect(item.value)}
             >
               {item.icon}
