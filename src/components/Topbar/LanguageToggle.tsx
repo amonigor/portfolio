@@ -19,7 +19,7 @@ export default function LanguageToggle() {
 
   return (
     <Dropdown
-      trigger={<Languages size={16} />}
+      trigger={<Languages size={24} />}
       value={locale}
       items={[
         { text: "English", value: "en-US" },
