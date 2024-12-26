@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from "react";
 import { Check } from "lucide-react";
+
+import useOutsideClick from "@/hooks/useOutsideClick";
 
 type Props = {
   trigger: React.ReactNode;
@@ -9,27 +10,16 @@ type Props = {
 };
 
 export default function Dropdown({ trigger, items, value, onSelect }: Props) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleClick = (e: MouseEvent) => {
-    if (ref.current && !ref.current.contains(e.target as Node)) {
-      setIsOpen(false);
-    }
-  };
+  const {
+    ref,
+    isInside: isOpen,
+    setIsInside: setIsOpen,
+  } = useOutsideClick(false);
 
   const handleSelect = (value: string) => {
     onSelect(value);
     setIsOpen(false);
   };
-
-  useEffect(() => {
-    document.addEventListener("click", handleClick);
-
-    return () => {
-      document.removeEventListener("click", handleClick);
-    };
-  });
 
   return (
     <div ref={ref} className="relative">
