@@ -49,7 +49,7 @@ export default function Dropdown({ trigger, items, value, onSelect }: Props) {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 glass rounded-2xl mt-1 px-2 divide-y-2 divide-black/10 dark:divide-white/10 min-w-32">
+        <div className="absolute motion-preset-expand motion-duration-150 right-0 glass rounded-2xl mt-1 px-2 divide-y-2 divide-black/10 dark:divide-white/10 min-w-32">
           {items.map((item) => (
             <button
               key={item.value}

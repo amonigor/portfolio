@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import motion from "tailwindcss-motion";
 
 export default {
   darkMode: ["selector", "[data-theme*='dark']"],
@@ -15,5 +16,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [motion],
 } satisfies Config;
