@@ -1,4 +1,7 @@
 {
+  "Head": {
+    "title": "Igor Amon - Frontend Software Engineer"
+  },
   "Topbar": {
     "menu": "Open navigation menu",
     "darkModeToggle": "Select color schema",
