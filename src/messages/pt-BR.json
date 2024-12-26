@@ -17,5 +17,10 @@
     "skills": "Habilidades",
     "experience": "Experiência",
     "contact": "Contato"
+  },
+  "Hero": {
+    "welcome": "Seja bem-vindo",
+    "introduction": "Oi! Sou o Igor",
+    "description": "um engenheiro de software frontend 💻"
   }
 }

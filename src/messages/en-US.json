@@ -17,5 +17,10 @@
     "skills": "Skills",
     "experience": "Experience",
     "contact": "Contact"
+  },
+  "Hero": {
+    "welcome": "Be welcome",
+    "introduction": "Hi! I'm Igor",
+    "description": "a frontend software engineer 💻"
   }
 }

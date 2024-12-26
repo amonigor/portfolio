@@ -10,10 +10,12 @@ const DarkModeToggle = dynamic(
 
 export default function Topbar() {
   return (
-    <div className="fixed top-4 right-4 flex items-center gap-2">
-      <Navbar />
-      <LanguageToggle />
-      <DarkModeToggle />
-    </div>
+    <header className="fixed w-full">
+      <div className="container mx-auto p-4 flex items-center justify-end gap-2">
+        <Navbar />
+        <LanguageToggle />
+        <DarkModeToggle />
+      </div>
+    </header>
   );
 }
