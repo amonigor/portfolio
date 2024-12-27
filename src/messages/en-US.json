@@ -20,12 +20,31 @@
   },
   "Hero": {
     "welcome": "Be welcome",
-    "introduction": "Hi! I'm Igor",
+    "introduction": "Hi! I'm Igor 👋",
     "description": "a frontend software engineer 💻"
   },
   "AboutMe": {
     "firstParagraph": "Hello! My name is Igor Amon, and I'm a frontend software engineer. I have approximately 6 years of experience in the development area. Today I work at Contruent developing applications with Vue.js. But although my focus is frontend, I also have experience with backend development, using Node.js and PHP.",
     "secondParagraph": "I have technical degree from ETEC Dr. Ruth Cardoso, a place responsible for showing me and falling in love with the technology area. Since then, I have been studying and improving myself more and more, always seeking to learn new technologies and methodologies.",
     "thirdParagraph": "I have a bachelor's degree in Information Systems from the Catholic University of Santos, where I was able to deepen my knowledge and develop better as a professional in the technology area."
+  },
+  "Skills": {
+    "everyday": "I work daily with...",
+    "everydaySubtitle": "These technologies are part of my daily routine",
+    "worked": "I have worked with...",
+    "workedSubtitle": "I have worked with these technologies in past projects",
+    "known": "I have played a bit with...",
+    "knownSubtitle": "I have studied these technologies, haven't worked with them but have done some small projects",
+    "softSkills": "Soft Skills",
+    "softSkillsSubtitle": "Interpersonal skills that help me work in a team and solve problems",
+    "effectiveCommunication": "Effective communication",
+    "easyAdaptability": "Easy adaptability",
+    "flexibility": "Flexibility",
+    "proactiveProblemSolving": "Proactive problem solving",
+    "continuousLearning": "Continuous learning",
+    "agileMethodology": "Agile methodology",
+    "criticalThinking": "Critical thinking",
+    "organization": "Organization",
+    "creative": "Creative"
   }
 }

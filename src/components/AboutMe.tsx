@@ -22,7 +22,7 @@ export default function AboutMe() {
         <Image
           src="/images/pic.jpg"
           alt="It's a me!"
-          className="rounded-full border-4 border-black/10 dark:border-white/10 mx-auto"
+          className="rounded-full border-4 border-black/10 dark:border-white/10 mx-auto hover:motion-scale-in-105"
           width={200}
           height={200}
         />

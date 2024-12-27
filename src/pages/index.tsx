@@ -1,11 +1,11 @@
 import type { GetStaticPropsContext } from "next";
 import Head from "next/head";
-
 import { useTranslations } from "next-intl";
 
 import Topbar from "@/components/Topbar/Topbar";
 import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
+import Skills from "@/components/Skills/Skills";
 
 export async function getStaticProps(context: GetStaticPropsContext) {
   return {
@@ -24,9 +24,10 @@ export default function Home() {
         <title>{t("title")}</title>
       </Head>
       <Topbar />
-      <main className="container mx-auto px-4">
+      <main className="container mx-auto px-4 pb-32">
         <Hero />
         <AboutMe />
+        <Skills />
       </main>
     </>
   );
