@@ -22,8 +22,8 @@ export default function Hero() {
       </p>
 
       <div className="flex flex-col items-center justify-center pt-16">
-        <Mouse className="motion-preset-oscillate motion-delay-100" />
-        <ChevronDown className="motion-preset-oscillate" />
+        <Mouse className="motion-preset-oscillate motion-delay-100 motion-duration-1500" />
+        <ChevronDown className="motion-preset-oscillate motion-duration-1500" />
       </div>
     </section>
   );
