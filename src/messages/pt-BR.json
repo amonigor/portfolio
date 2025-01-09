@@ -1,0 +1,50 @@
+{
+  "Head": {
+    "title": "Igor Amon - Engenheiro de Software Frontend"
+  },
+  "Topbar": {
+    "menu": "Abrir menu de navegação",
+    "darkModeToggle": "Selecione um esquema de cores",
+    "languageToogle": "Selecione uma língua"
+  },
+  "DarkMode": {
+    "dark": "Escuro",
+    "light": "Claro",
+    "system": "Sistema"
+  },
+  "Navbar": {
+    "aboutMe": "Sobre mim",
+    "skills": "Habilidades",
+    "experience": "Experiência",
+    "contact": "Contato"
+  },
+  "Hero": {
+    "welcome": "Seja bem-vindo",
+    "introduction": "Olá! Sou Igor",
+    "description": "um engenheiro de software frontend 💻"
+  },
+  "AboutMe": {
+    "firstParagraph": "Olá! Me chamo Igor Amon, e sou um engenheiro de software frontend. Tenho aproximadamente 6 anos de experiência na área de desenvolvimento. Trabalho hoje na Contruent desenvolvendo aplicações com Vue.js. Mas apesar de meu foco ser frontend, também tenho experiência com o desenvolvimento backend, utilizando Node.js e PHP.",
+    "secondParagraph": "Tenho formação ténica pela ETEC Dra. Ruth Cardoso, lugar responsável por me mostrar e me apaixonar pela área de tecnologia. Desde então, venho estudando e me aprimorando cada vez mais, sempre buscando aprender novas tecnologias e metodologias.",
+    "thirdParagraph": "Tenho bacharelado em Sistemas de Informação pela Universidade Católica de Santos, onde pude aprofundar meus conhecimentos e me desenvolver melhor como profissional na área de tecnologia."
+  },
+  "Skills": {
+    "everyday": "Trabalho diariamente com...",
+    "everydaySubtitle": "Essas tecnologias fazem parte do meu dia a dia",
+    "worked": "Já trabalhei com...",
+    "workedSubtitle": "Já trabalhei com essas tecnologias em projetos passados",
+    "known": "Já brinquei um pouco com...",
+    "knownSubtitle": "Estudei essas tecnologias, não trabalhei com elas mas cheguei a fazer alguns projetos pequenos",
+    "softSkills": "Soft Skills",
+    "softSkillsSubtitle": "Habilidades interpessoais que me ajudam a trabalhar em equipe e resolver problemas",
+    "effectiveCommunication": "Comunicação eficaz",
+    "easyAdaptability": "Fácil adaptabilidade",
+    "flexibility": "Flexibilidade",
+    "proactiveProblemSolving": "Resolução de problemas proativa",
+    "continuousLearning": "Aprendizado contínuo",
+    "agileMethodology": "Metodologia ágil",
+    "criticalThinking": "Pensamento crítico",
+    "organization": "Organização",
+    "creative": "Criativo"
+  }
+}
